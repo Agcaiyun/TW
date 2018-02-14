@@ -1,0 +1,42 @@
+{
+    "title": "JavaScript全栈 - Pre-Course",
+    "description": "思沃学院之JavaScript全栈 - Pre-Course",
+    "language": "zh",
+    "plugins": [
+      "disqus",
+      "github",
+      "editlink",
+      "prism",
+      "-highlight",
+      "splitter",
+      "sitemap",
+      "-sharing",
+      "-search"
+    ],
+    "pluginsConfig": {
+      "disqus": {
+        "shortName": "tws-js-precourse"
+      },
+      "github": {
+        "url": "https://github.com/tws-challenge/javascriptFullStackPre-Course"
+      },
+      "editlink": {
+        "base": "https://tws.gitbooks.io/javascript-pre-course/content",
+        "label": "编辑本页"
+      },
+      "sitemap": {
+          "hostname": "https://tws.gitbooks.io/javascript-pre-course/"
+      },"sharing": {
+        "facebook": true,
+        "twitter": true,
+        "google": false,
+        "weibo": false,
+        "instapaper": false,
+        "vk": false,
+        "all": [
+            "facebook", "google", "twitter",
+            "weibo", "instapaper"
+        ]
+    }
+    }
+  }
