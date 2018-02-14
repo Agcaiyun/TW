@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 题目：将一个正整数分解质因数。例如：输入90,打印出90=2335。 -->
+
+    <script>
+    //重构后
+    var num = 90;
+    primeFactor(num);
+//关于其中的验证因数是否为质数的部分：
+//在本题中，90 % 2 == 0   => 2
+//90 / 2 = 45  45 % 2 != 0   45 % 3 == 0   =>  3
+//45 / 3 = 15  15 % 3 == 0   => 3
+//15 / 3 = 5   5 % 3 != 0    5 % 4 != 0 5 % 5 == 0   => 5
+//其中，不能被 2 整除的，一定不能被 4 6 8 等合数整除
+//不能被 3 整除的一定不能被 6 9 12 等合数整除
+//所以，在这个题目中，不会出现因数是质数的情况
+    function primeFactor(num){
+        var str = num + '=';
+        for(let i = 2;i <= num ; i++){
+             if (num > 1) {
+                while (num % i == 0){
+                    str += i;
+                    num /= i;
+                }
+            }
+        }
+       console.log(str);
+    }
+
+
+    // 2017.09.20 Update 
+    
+    //     let num = [1,2,5,6,25,90];
+    //     for(let ele of num){
+    //         let result = primeFactor(ele);
+    //         let ans =  result.split("").join("*");
+    //         console.log(ele + "=" + ans);
+    //     }
+    //     function primeFactor(num) {
+    //         let str = "";
+    //         num === 1 ? str += 1 : null;
+    //         for (let i = 2; i <= num; i++) {
+    //             if (isPrime(i)) {
+    //                while(num % i === 0){
+    //                    str += i;
+    //                    num /= i;
+    //                }
+    //             }
+    //         }
+    //         return str;
+    //     }
+    //     function isPrime(number) {
+    //         let count = 0;
+    //         for (let i = 2; i < Math.sqrt(number); i++) {
+    //             number % i === 0 ? count++ : null;
+    //         }
+    //         return count == 0 ?  true :  false;
+    //     }
+    // 
+        /* 
+        let num = 90;
+        primeFactor(num);
+
+        function primeFactor(n){
+            //求出最小的质数 k 
+            let k = smallestPrime(n);
+    /*
+    (1)如果这个质数恰等于n，则说明分解质因数的过程已经结束，打印出即可。
+　　(2)如果n>k，但n能被k整除，则应打印出k的值，并用n除以k的商,作为新的正整数你n,重复执行第一步。
+　　(3)如果n不能被k整除，则用k+1作为k的值,重复执行第一步。
+    */
+    /*
+            if(n != k){
+                change(k,n);
+            }else{
+                print(n);
+            }
+        }
+        
+        function smallestPrime(n){
+            let k = 0;
+            for(let i = 2;i < n ;i++){
+                if(n % i == 0){
+                    k = i;
+                    return k;
+                }
+            }
+        }
+
+        function change(k,n){
+            if (n > k) {
+                if (n % k == 0) {
+                    console.log(k);
+                    n = n / k;
+                    print(k, n);
+                } else {
+                    k += 1;
+                    print(k, n);
+                }
+            }
+        }
+
+        function print(k,n){
+            if(k == n){
+                console.log(k);
+            }else{
+                change(k,n);
+            }
+        }
+       */
+
+       
+
+    </script>
+</body>
+</html>

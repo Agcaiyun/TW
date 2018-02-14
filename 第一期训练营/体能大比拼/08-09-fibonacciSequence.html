@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let integer = prompt("请输入数字N，以查找斐波纳契数列中的第N个数");
+        fibonacciSequence(integer);
+
+        function fibonacciSequence(num){
+            let arr = [];
+            arr.push(0,1);
+            for(let i = 2;i < num;i++){
+                let after = arr[i - 1];
+                let before = arr[i - 2];
+                let current = after + before;
+                arr.push(current);
+            }
+            console.log(arr);
+        }
+    </script>
+</body>
+</html>

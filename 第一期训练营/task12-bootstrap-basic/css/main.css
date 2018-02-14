@@ -1,0 +1,57 @@
+.text-center {
+    text-align: center;
+}
+
+.navbar-wrapper {
+    background-color: #339999;
+}
+
+.self-navbar {
+    border-radius: 5px;
+}
+
+.dropdown-menu>li>a:hover {
+    background-color: #71c2ea;
+    background-image: linear-gradient(to bottom, #08c, #07b);
+    background-repeat: repeat-x;
+}
+
+.carousel-control{
+    padding-top: 125px;
+    font-size: 120px;
+    text-shadow: 0 1px 1px rgba(0,0,0.4);
+    background-color: transparent;
+    border: 0;
+    z-index: 10; 
+}
+
+
+.marketing-img {
+    display: block;
+    margin: 0 auto 30px;
+    max-height: 145px;
+}
+
+.featurette {
+    padding-top: 100px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.self-featurette{
+    width: 300px;
+    height: 300px;
+    margin-top: -100px;
+}
+
+.margin-left50{
+    margin-left: 50px;
+}
+
+.margin-right50{
+    margin-right: 50px;
+}
+
+.footer{
+    margin: 80px auto;
+}

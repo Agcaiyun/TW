@@ -1,0 +1,2 @@
+2017年7月
+这个 pre-pos 仓库是在 ThoughtWorks 参加暑期线上训练营的时候从一位大神的 GitHub repo 中 fork 过来的，目的在于 练习 JS 的基础知识。

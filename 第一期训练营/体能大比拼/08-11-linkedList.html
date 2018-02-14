@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let str = '1->2->3->3->4->5->3';
+        let val = 3;
+        linkedList(str ,val);
+
+        function linkedList(str,val){
+            let numStr = str.split('->');
+            let result = [];
+            result = numStr.filter((ele) => ele !== val.toString());
+            //join() 不会改变原数组
+            result = result.join('->');
+            console.log(result);
+        }
+        
+
+
+        
+
+/*             
+//下面这个方法存在问题，就是 split 获得的是 字符串，而不在 数字了
+//而恰巧 我的判断是 != 如果是 !== 就会出错，所以要改正如上
+        function linkedList(str,val){
+            let numStr = str.split('->');
+            let result = [];
+            //用 filter 方法进行封装
+            result = numStr.filter(ele => ele != val)
+            result = result.join('->');
+ */            
+            //原始的简单方法
+            // for(let i of numStr){
+            //     if(i != val){
+            //         result.push(i);
+            //     }
+            // }
+            // result = result.join('->');
+            // console.log(result);
+        //     console.log(result);
+        // }
+    </script>
+</body>
+</html>

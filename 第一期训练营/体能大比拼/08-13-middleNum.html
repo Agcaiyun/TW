@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let arr1 = [1,5,8,7,9,45,86,98,52,1,35,8,3];  //8
+        let arr2 = [58,63,4,2,6,9,8,55,2,1,44,22];  //8.5
+        let result1 = middleNum(arr1);
+        let result2 = middleNum(arr2);
+
+        function middleNum(arr){
+            arr.sort((a,b) => a - b);
+            let result = arr.length % 2 == 0 ? (( arr[arr.length / 2 - 1] + arr[arr.length / 2] ) / 2) : arr[Math.floor(arr.length / 2)]; 
+            console.log(arr + '-->' + result);
+        }
+
+    </script>
+</body>
+</html>
