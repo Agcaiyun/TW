@@ -2,9 +2,7 @@
 # 编程题 Javascript 集合操作基础练习
  
 ### 任务描述
-1. git clone题目 [tws-practice/collection-calculate-camp](https://github.com/tws-practice/collection-calculate-camp) 到che的tasks文件夹里，请命名为「task4-collection-calculate-camp」
-
-3. 完成题目。
+1. git clone 题目 [tws-practice/collection-calculate-camp](https://github.com/tws-practice/collection-calculate-camp) 
  
 ### 学习资料
 没有Javascript基础的同学，可参考下列学习资料：
